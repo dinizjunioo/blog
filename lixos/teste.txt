@@ -1,0 +1,21 @@
+{
+    "funcionarios":
+    [
+        {
+            "nome":"cassia",
+            "idade":"24"
+        },
+        {
+            "nome":"thiago",
+            "idade":"28"
+        },
+        {
+            "nome":"thiago",
+            "idade":"28"
+        },
+        {
+            "nome":"silvia",
+            "idade":"32"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+
+GET http://localhost:8000/usuarios
+
+###
+
+POST http://localhost:8000/usuarios
+content-type: application/json
+
+{
+    "email": "mariana@gmail.com",
+    "senha": "meu123mer123"
+}
+
+###
+
+PUT http://localhost:8000/usuarios?id=1
+content-type: application/json
+
+{
+    "email": "claudiogermano123@gmail.com",
+    "senha": "meu123456"
+}
+
+###
+
+DELETE http://localhost:8000/usuarios?id=1
+

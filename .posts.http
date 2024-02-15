@@ -1,0 +1,28 @@
+
+GET http://localhost:8000/posts/1
+
+###
+
+POST http://localhost:8000/posts
+content-type: application/json
+
+{
+    "titulo": "pagina 2",
+    "texto": "meu123mha23"
+}
+
+###
+
+PUT http://localhost:8000/posts?id=1
+content-type: application/json
+
+{
+    "titulo": "2dwwdwadwadawawdawdadwdawawdwadawdawddwaawddawadwawdadwawdawdawdawdwadawdawdawdwaddwawdadwadwadwawda",
+    "texto": "meu456meu456"
+}
+
+###
+
+DELETE http://localhost:8000/posts?id=1
+
+
