@@ -1,5 +1,5 @@
 
-GET http://localhost:8000/posts/1
+GET http://localhost:8000/posts
 
 ###
 
@@ -8,7 +8,8 @@ content-type: application/json
 
 {
     "titulo": "pagina 2",
-    "texto": "meu123mha23"
+    "texto": "meu123mha23",
+    "userId":1
 }
 
 ###
@@ -23,6 +24,6 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:8000/posts?id=1
+DELETE http://localhost:8000/posts?id=4
 
 

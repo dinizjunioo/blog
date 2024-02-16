@@ -13,6 +13,10 @@ app.use('/posts', routePosts);
 //     next(); // Chama next() para passar o controle para o próximo middleware ou rota
 // });
 
+app.get('/', async (req, res) => {
+    res.json({msg: "pagina principal"});
+});
+
 app.listen(PORT, () => {
     console.log(`servidor aberto na porta ${8000}`);
 })
