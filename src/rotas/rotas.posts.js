@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const validarMiddlewarePosts = require('../middlewares/validarPosts.middleware')
 const { Post } = require('../db/models')
+const upload = require('../middlewares/multerConfig.middleware'); // Importa o middleware do Multer
 
 // middlewares 
 router.post('/', validarMiddlewarePosts);
@@ -16,6 +17,11 @@ router.get('/', async (req, res ) => {
 router.get('/:id', async (req, res) => {
     const post = await Post.findByPk(req.params.id);
     res.json({posts: post})
+})
+
+router.post('/upload', upload.single('foto'), async (req, res) => {
+    console.log(req.file)
+    res.json({msg: 'Arquivo enviado com sucesso'})
 })
 
 router.post('/',async (req, res ) => {
